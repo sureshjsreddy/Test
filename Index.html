@@ -33,12 +33,17 @@
     function onError(contactError) {
         alert('onError!');
     }
+    
+     function loadDatabasedemoPage()
+             {
+                window.location = "databasedemo.html";
+             }
 
     </script>
   </head>
   <body>
     <h1>Example</h1>
     <p>Find Contacts</p>
-    <a href="databasedemo.html">databasedemo</a>
+   <button name="buttonClick" onclick="callAnothePage()">Database demo!</button>
   </body>
 </html>
