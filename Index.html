@@ -23,8 +23,10 @@
     // onSuccess: Get a snapshot of the current contacts
     //
     function onSuccess(contacts) {
+      alert('sucess');
         for (var i=0; i<contacts.length; i++) {
             console.log("Display Name = " + contacts[i].displayName);
+            alert(contacts[i].displayName);
         }
     }
 
@@ -44,6 +46,6 @@
   <body>
     <h1>Example</h1>
     <p>Find Contacts</p>
-   <button name="buttonClick" onclick="callAnothePage()">Database demo!</button>
+   <button name="buttonClick" onclick="loadDatabasedemoPage()">Database demo!</button>
   </body>
 </html>
